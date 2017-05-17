@@ -1,0 +1,4 @@
+syntax = "proto3";
+message CallMessage {
+    string content = 1;
+}

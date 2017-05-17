@@ -1,0 +1,12 @@
+protobuf3.2:
+java
+protoc.exe --java_out=./entity ./proto/*.proto ./proto/*/*.proto
+c#
+protoc.exe --csharp_out=./entity ./proto/*.proto ./proto/*/*.proto
+
+
+
+protobuf2:
+c#
+protoc --descriptor_set_out=out\DefeatMessage.protobin --proto_path=proto --include_imports proto\DefeatMessage.proto
+protogen out\DefeatMessage.protobin -output_directory:out_cs

@@ -1,0 +1,4 @@
+message NetMessage {
+	optional string k = 1;
+	optional string v = 2;
+}

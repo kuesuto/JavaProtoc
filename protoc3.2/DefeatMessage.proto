@@ -1,0 +1,14 @@
+syntax = "proto3";
+import "BackMessage.proto";
+import "CallMessage.proto";
+
+message DefeatMessage {
+    enum Type { 
+    	CallMessage = 0; 
+    	BackMessage = 1; 
+    }
+
+    Type type = 1;
+    CallMessage callMessage = 2;
+    BackMessage backMessage = 3;
+}

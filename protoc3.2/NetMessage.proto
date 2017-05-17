@@ -1,0 +1,5 @@
+syntax = "proto3";
+message NetMessage {
+	string k = 1;
+	string v = 2;
+}
